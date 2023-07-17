@@ -1,0 +1,24 @@
+
+Sure, here is the SQL code for the chat application, formatted professionally:
+
+SQL
+-- Create a database called `chat`
+CREATE DATABASE chat;
+
+-- Use the `chat` database
+USE chat;
+
+-- Create a table called `messages`
+CREATE TABLE messages (
+  id INT NOT NULL AUTO_INCREMENT,
+  username VARCHAR(255) NOT NULL,
+  message TEXT NOT NULL,
+  created_at DATETIME NOT NULL,
+  PRIMARY KEY (id)
+);
+
+-- This table will store the chat messages.
+-- The `id` column is the ID of the message.
+-- The `username` column is the username of the user who sent the message.
+-- The `message` column is the message itself.
+-- The `created_at` column is the date and time the message was created.
